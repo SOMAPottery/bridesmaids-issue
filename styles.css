@@ -834,18 +834,13 @@ a   { color: inherit; text-decoration: none; }
 /* Offset intro lede (carta-style) */
 .out-lede {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 3rem auto 0;
+  padding: 0 2.5rem;
 }
 .out-lede p {
-  margin-left: 36vw;
-  width: 50vw;
-  max-width: 230px;
-  box-sizing: border-box;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  max-width: 52vw;
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
   line-height: 1.3;
-}
-@media (min-width: 680px) {
-  .out-lede p { margin-left: 22%; width: auto; max-width: 46%; }
 }
 
 /* Outfit event paragraphs — same layout as it-intro, ~2pt smaller */
@@ -969,7 +964,7 @@ a   { color: inherit; text-decoration: none; }
 }
 .out-color-name {
   font-family: var(--serif);
-  font-size: clamp(0.875rem, 1.75vw, 1rem);
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
   font-weight: 700;
   color: var(--text);
   line-height: 1.3;
@@ -1201,12 +1196,14 @@ a   { color: inherit; text-decoration: none; }
 @media (max-width: 679px) {
   .it-intro  { padding-inline: 1.25rem; }
   .out-para  { padding-inline: 1.25rem; }
+  .out-lede  { padding-inline: 1.25rem; }
   .page-text { padding-inline: 1.25rem; }
   .article   { padding-inline: 1.25rem; }
   .carta-letter-wrap { padding-inline: 0; }
 
   .it-intro p,
-  .out-para p {
+  .out-para p,
+  .out-lede p {
     margin-left: 24px;
     width: 66vw;
     max-width: 260px;
