@@ -534,9 +534,6 @@ a   { color: inherit; text-decoration: none; }
   justify-content: center;
 }
 
-.ch-carta .ch-title {
-  font-size: clamp(2.625rem, 8vw, 3.25rem);
-}
 
 /* ── Carta: offset letter paragraph + attached signature ── */
 .carta-letter-wrap {
@@ -565,9 +562,6 @@ a   { color: inherit; text-decoration: none; }
   .ch-carta {
     min-height: 0;
     padding: 7rem 2rem 6rem;
-  }
-  .ch-carta .ch-title {
-    font-size: clamp(1.85rem, 5vw, 3.2rem);
   }
   .carta-letter-p {
     margin-left: 22%;
