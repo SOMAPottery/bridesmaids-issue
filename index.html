@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Carta — The Bridesmaids Issue</title>
+  <title>The Bridesmaids Issue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
@@ -11,23 +11,16 @@
 </head>
 <body>
 
-  <nav class="nav" id="nav">
+  <nav class="nav nav-cover" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">The Bridesmaids Issue</a>
-      <ul class="nav-links" role="list">
-        <li><a href="index.html" class="active">01 Carta</a></li>
-        <li><a href="itinerary.html">02 Itinerario</a></li>
-        <li><a href="outfits.html">03 Looks</a></li>
-        <li><a href="travel.html">04 Travel</a></li>
-        <li><a href="duties.html">05 Duties</a></li>
-      </ul>
       <button class="nav-btn" id="navBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
     </div>
   </nav>
 
   <div class="overlay" id="overlay" aria-hidden="true">
     <div class="overlay-links">
-      <a href="index.html" class="overlay-link">La Carta</a>
+      <a href="carta.html" class="overlay-link">La Carta</a>
       <a href="itinerary.html" class="overlay-link">El Itinerario</a>
       <a href="outfits.html" class="overlay-link">Los Looks</a>
       <a href="travel.html" class="overlay-link">Travel</a>
@@ -35,85 +28,9 @@
     </div>
   </div>
 
-  <main class="page">
-
-    <!-- Chapter header -->
-    <header class="ch">
-      <span class="ch-num ri">I.</span>
-      <h1 class="ch-title ri d1">La Carta</h1>
-      <span class="ch-sub ri d2">The Bridesmaids Issue &nbsp;·&nbsp; Feb. 06 2027</span>
-    </header>
-
-    <!-- Index block -->
-    <div class="index-block ri">
-      Index:<br>
-      [La Carta] &nbsp; [Important Details]
-    </div>
-
-    <!-- Meta row -->
-    <div class="meta-row ri d1">
-      <span>La Carta</span>
-      <span>Copán Ruinas, Honduras</span>
-    </div>
-
-    <!-- Magazine spread image -->
-    <div class="fig-full ri d2" style="margin-top: 1.5rem;">
-      <img src="images/img-001.png" alt="The Bridesmaids Issue — magazine spread">
-      <span class="fig-cap">FIG 001 — Callecitas de Copán Ruinas. Location de la boda. A 3 horas en carro de San Pedro Sula, Honduras.</span>
-    </div>
-
-    <!-- Letter body — large indented serif prose -->
-    <div class="article ri" style="padding-bottom: 0;">
-      <p>Decidí plasmarles en este issue <em>(magazine style)</em> todo lo que necesitan saber para nuestra boda. Aquí resumo sus duties como bridesmaids, fechas importantes, colores — es decir, everything you need para empezar a prepararse y para que el día de la boda disfruten a mi lado tanto como me lo imagino cada día.</p>
-      <p>Las amo muchísimo. Hope you find it entertaining &amp; useful!!</p>
-    </div>
-
-    <!-- Signature -->
-    <div class="article ri d1" style="padding-top: 0; padding-bottom: 5rem;">
-      <div class="carta-sign">
-        <span class="sign-close">Con mucho amor,</span>
-        <span class="sign-name">Marce</span>
-      </div>
-      <p class="carta-note">
-        Este issue les ayudará a tener los detalles más importantes desde antes de enviar la website. Son las personas más importantes &amp; i want you to have it.
-      </p>
-    </div>
-
-    <!-- ── IMPORTANT DETAILS ── -->
-    <div class="meta-row ri">
-      <span>Los Detalles Más Importantes</span>
-      <span>Issue 01</span>
-    </div>
-
-    <div class="details ri d1">
-      <div class="details-grid">
-        <div>
-          <img src="images/img-002.jpg" alt="La fecha — 06.02.2027" class="detail-img">
-          <span class="fig-cap">FIG 002</span>
-          <p class="detail-cap">La fecha de nuestra boda. Es el <strong>06 de febrero 2027.</strong> Fer escogió la fecha por un sig en numerología.</p>
-        </div>
-        <div>
-          <img src="images/img-003.jpg" alt="El location — Copán Ruinas, Honduras" class="detail-img">
-          <span class="fig-cap">FIG 003</span>
-          <p class="detail-cap">El location de la boda es en <strong>Copán Ruinas, Honduras.</strong> La ciudad de las ruinas mayas y un lugar donde amamos ir con Fer.</p>
-        </div>
-      </div>
-      <p class="details-note">
-        Nuestra boda será un wedding weekend compuesto por varias actividades. Pueden unirse a las que puedan.
-      </p>
-    </div>
-
-  </main>
-
-  <div class="page-turn">
-    <span></span>
-    <a href="itinerary.html">El Itinerario →</a>
+  <div class="cover-wrap">
+    <img src="images/img-000.png" alt="The Bridesmaids Issue" class="cover-img">
   </div>
-
-  <footer class="foot">
-    <p>The Bridesmaids Issue &nbsp;·&nbsp; Feb. 06 2027 &nbsp;·&nbsp; Copán Ruinas, Honduras</p>
-    <p>Hecho con mucho amor ♡</p>
-  </footer>
 
   <script src="main.js"></script>
 </body>

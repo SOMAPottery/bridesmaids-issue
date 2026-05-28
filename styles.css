@@ -841,6 +841,39 @@ a   { color: inherit; text-decoration: none; }
 }
 
 /* ===============================================================
+   COVER PAGE
+   Full-screen image, transparent nav, cream text — Field Studies Flora
+   =============================================================== */
+.cover-wrap {
+  width: 100%;
+  height: 100svh;
+  min-height: 580px;
+  overflow: hidden;
+}
+
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Nav variant for cover — transparent bg, cream text */
+.nav.nav-cover {
+  background: transparent;
+  border: none;
+}
+
+.nav.nav-cover .nav-brand,
+.nav.nav-cover .nav-btn {
+  color: rgba(243, 238, 224, 0.88);
+}
+
+/* Always show MENU on cover, hide desktop links */
+.nav.nav-cover .nav-links { display: none !important; }
+.nav.nav-cover .nav-btn   { display: block !important; }
+
+/* ===============================================================
    UTILITIES
    =============================================================== */
 @media (max-width: 360px) { body { font-size: 0.93rem; } }
