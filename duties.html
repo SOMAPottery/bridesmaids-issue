@@ -6,43 +6,50 @@
   <title>Los Duties — The Bridesmaids Issue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Cormorant+SC:wght@300;400&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav class="nav page-nav" id="nav">
+  <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">The Bridesmaids Issue</a>
       <ul class="nav-links" role="list">
-        <li><a href="letter.html">01 La Carta</a></li>
-        <li><a href="itinerary.html">02 El Itinerario</a></li>
-        <li><a href="outfits.html">03 Los Looks</a></li>
-        <li><a href="duties.html" class="active">04 Los Duties</a></li>
+        <li><a href="index.html">01 Carta</a></li>
+        <li><a href="itinerary.html">02 Itinerario</a></li>
+        <li><a href="outfits.html">03 Looks</a></li>
+        <li><a href="travel.html">04 Travel</a></li>
+        <li><a href="duties.html" class="active">05 Duties</a></li>
       </ul>
-      <button class="nav-btn" id="navBtn" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <button class="nav-btn" id="navBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
     </div>
   </nav>
 
   <div class="overlay" id="overlay" aria-hidden="true">
     <div class="overlay-links">
-      <a href="letter.html" class="overlay-link">La Carta</a>
+      <a href="index.html" class="overlay-link">La Carta</a>
       <a href="itinerary.html" class="overlay-link">El Itinerario</a>
       <a href="outfits.html" class="overlay-link">Los Looks</a>
+      <a href="travel.html" class="overlay-link">Travel</a>
       <a href="duties.html" class="overlay-link">Los Duties</a>
     </div>
   </div>
 
-  <main class="page-wrap">
+  <main class="page">
 
-    <div class="page-chapter">
-      <span class="page-num ri">Last but not least… &nbsp;·&nbsp; Issue 04</span>
-      <h1 class="page-title ri d1">Los Duties</h1>
+    <header class="ch">
+      <span class="ch-num ri">V.</span>
+      <h1 class="ch-title ri d1">Los Duties</h1>
+      <span class="ch-sub ri d2">Last but not least…</span>
+    </header>
+
+    <div class="meta-row ri">
+      <span>Los Duties</span>
+      <span>Issue 05</span>
     </div>
 
-    <div class="duties-body ri">
+    <!-- Duties body — centered, intimate prose -->
+    <div class="duties-body ri d1" style="padding-top: 3.5rem;">
       <p>Más que duties, lo que más quiero es tenerlas cerca.</p>
       <p>Que me acompañen, y que me ayuden a que el weekend se sienta feliz, fácil y demasiado fun.</p>
       <p class="duties-em">Su job principal es simple:<br><strong>bring the good energy.</strong></p>
@@ -52,10 +59,11 @@
       <p>Cada una tendrá un special duty asignado más adelante, pero don't worry, nada grave. Solo cosas cute para que el día fluya y todas sepamos qué hacer.</p>
     </div>
 
-    <div class="duties-closing ri d1">
+    <!-- Closing section — image + words + signature -->
+    <div class="duties-closing ri d2">
       <div>
-        <img src="images/img-016.png" alt="FIG 007 — The end. Marce &amp; Fer" class="closing-img">
-        <p class="fig" style="margin-top: 0.75rem">FIG 007 — The end.</p>
+        <img src="images/img-016.png" alt="FIG 007 — Marce &amp; Fer" class="closing-img">
+        <span class="fig-cap" style="margin-top: 0.65rem; display: block;">FIG 007 — The end.</span>
       </div>
       <div class="closing-words">
         <p>Cualquier detalle extra estará en la webpage que próximamente compartiré con ustedes y todos los invitados.</p>
@@ -67,15 +75,13 @@
   </main>
 
   <div class="page-turn">
-    <a href="outfits.html">← Los Looks</a>
-    <a href="index.html">↩ Portada</a>
+    <a href="travel.html">← Travel</a>
+    <a href="index.html">↩ La Carta</a>
   </div>
 
-  <footer class="site-footer">
-    <p class="footer-logo">The Bridesmaids Issue</p>
-    <p class="footer-meta">Feb. 06 2027 &nbsp;·&nbsp; Copán Ruinas, Honduras</p>
-    <p class="footer-soon">La wedding website completa — próximamente.</p>
-    <p class="footer-love">Hecho con mucho amor ♡</p>
+  <footer class="foot">
+    <p>The Bridesmaids Issue &nbsp;·&nbsp; Feb. 06 2027 &nbsp;·&nbsp; Copán Ruinas, Honduras</p>
+    <p>Hecho con mucho amor ♡</p>
   </footer>
 
   <script src="main.js"></script>

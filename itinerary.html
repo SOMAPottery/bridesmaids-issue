@@ -6,177 +6,119 @@
   <title>El Itinerario — The Bridesmaids Issue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Cormorant+SC:wght@300;400&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav class="nav page-nav" id="nav">
+  <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">The Bridesmaids Issue</a>
       <ul class="nav-links" role="list">
-        <li><a href="letter.html">01 La Carta</a></li>
-        <li><a href="itinerary.html" class="active">02 El Itinerario</a></li>
-        <li><a href="outfits.html">03 Los Looks</a></li>
-        <li><a href="duties.html">04 Los Duties</a></li>
+        <li><a href="index.html">01 Carta</a></li>
+        <li><a href="itinerary.html" class="active">02 Itinerario</a></li>
+        <li><a href="outfits.html">03 Looks</a></li>
+        <li><a href="travel.html">04 Travel</a></li>
+        <li><a href="duties.html">05 Duties</a></li>
       </ul>
-      <button class="nav-btn" id="navBtn" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <button class="nav-btn" id="navBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
     </div>
   </nav>
 
   <div class="overlay" id="overlay" aria-hidden="true">
     <div class="overlay-links">
-      <a href="letter.html" class="overlay-link">La Carta</a>
+      <a href="index.html" class="overlay-link">La Carta</a>
       <a href="itinerary.html" class="overlay-link">El Itinerario</a>
       <a href="outfits.html" class="overlay-link">Los Looks</a>
+      <a href="travel.html" class="overlay-link">Travel</a>
       <a href="duties.html" class="overlay-link">Los Duties</a>
     </div>
   </div>
 
-  <main class="page-wrap">
+  <main class="page">
 
-    <div class="intro-split">
-      <div class="intro-split-img ri">
-        <img src="images/img-004.png" alt="FIG 004 — The Itinerary">
-      </div>
-      <div class="intro-split-text">
-        <span class="s-label ri">Fechas e Itinerario &nbsp;·&nbsp; Issue 02</span>
-        <h1 class="dh ri d1" style="font-size: clamp(3.5rem, 11vw, 6.5rem)">
-          The<br>Itinerary
-        </h1>
-        <p class="intro-lead ri d2">
-          Para pasar un amazing weekend estamos organizando una serie de eventos desde el viernes por la mañana para gozarla!!
-        </p>
-      </div>
+    <header class="ch">
+      <span class="ch-num ri">II.</span>
+      <h1 class="ch-title ri d1">El Itinerario</h1>
+      <span class="ch-sub ri d2">Feb. 04 – 06 2027</span>
+    </header>
+
+    <div class="index-block ri">
+      Index:<br>
+      [Travel] &nbsp; [Run&amp;Sculpt] &nbsp; [Welcome Party] &nbsp; [The Wedding]
     </div>
 
-    <div class="event-list">
+    <div class="meta-row ri d1">
+      <span>El Itinerario</span>
+      <span>Copán Ruinas</span>
+    </div>
 
-      <div class="event-item ri">
+    <!-- Intro image -->
+    <div class="fig-full ri d2" style="margin-top: 1.5rem;">
+      <img src="images/img-004.png" alt="FIG 004 — The Itinerary">
+      <span class="fig-cap">FIG 004 — El wedding weekend empieza el jueves 04 de febrero 2027.</span>
+    </div>
+
+    <!-- Intro prose -->
+    <div class="article ri">
+      <p>Para pasar un amazing weekend estamos organizando una serie de eventos desde el viernes por la mañana para gozarla. Hay algo para todos.</p>
+    </div>
+
+    <!-- Events list -->
+    <div class="ev-list" style="padding-top: 1rem;">
+
+      <div class="ev ri">
         <div>
-          <span class="event-num">I.</span>
-          <h2 class="event-name">Travel</h2>
-          <span class="event-when">Jueves 04 de Febrero</span>
+          <span class="ev-num">I.</span>
+          <h2 class="ev-name">Travel</h2>
+          <span class="ev-when">Jueves 04 de Febrero</span>
         </div>
-        <p class="event-desc">Saldremos de SPS para Copán Ruinas. Es un día libre para turistear o rest, sauna y pool day.</p>
+        <p class="ev-desc">Saldremos de SPS para Copán Ruinas. Es un día libre para turistear o rest, sauna y pool day en el hotel.</p>
       </div>
 
-      <div class="event-item ri">
+      <div class="ev ri">
         <div>
-          <span class="event-num">II.</span>
-          <h2 class="event-name">Run&amp;Sculpt</h2>
-          <span class="event-when">Viernes 05 &nbsp;·&nbsp; 8:00 am</span>
+          <span class="ev-num">II.</span>
+          <h2 class="ev-name">Run &amp; Sculpt</h2>
+          <span class="ev-when">Viernes 05 &nbsp;·&nbsp; 8:00 am</span>
         </div>
-        <p class="event-desc">Una clase de sculpt y un trail run activity en las ruinas mayas. Solo para close friends &amp; family. Wear sneakers!</p>
+        <p class="ev-desc">Una clase de sculpt y un trail run activity en las ruinas mayas. Solo para close friends &amp; family. Wear sneakers!</p>
       </div>
 
-      <div class="event-item ri">
+      <div class="ev ri">
         <div>
-          <span class="event-num">III.</span>
-          <h2 class="event-name">Welcome Party</h2>
-          <span class="event-when">Viernes 05 &nbsp;·&nbsp; 4:00 pm</span>
+          <span class="ev-num">III.</span>
+          <h2 class="ev-name">Welcome Party</h2>
+          <span class="ev-when">Viernes 05 &nbsp;·&nbsp; 4:00 pm</span>
         </div>
-        <p class="event-desc">El pre-wedding en el pool &amp; bar del Hotel Marina Copán. La primera celebración oficial.</p>
+        <p class="ev-desc">El pre-wedding en el pool &amp; bar del Hotel Marina Copán. La primera celebración oficial del weekend.</p>
       </div>
 
-      <div class="event-item event-item--wedding ri">
+      <div class="ev ev--wedding ri">
         <div>
-          <span class="event-num">IV.</span>
-          <h2 class="event-name">The Wedding</h2>
-          <span class="event-when">Sábado 06 &nbsp;·&nbsp; 3:00 pm</span>
+          <span class="ev-num">IV.</span>
+          <h2 class="ev-name">The Wedding</h2>
+          <span class="ev-when">Sábado 06 &nbsp;·&nbsp; 3:00 pm</span>
         </div>
-        <p class="event-desc">La misa en la Catedral de Copán Ruinas, seguida por la recepción en el Centro de Convenciones Marina Copán.</p>
+        <p class="ev-desc">La misa en la Catedral de Copán Ruinas, seguida por la recepción en el Centro de Convenciones Marina Copán.</p>
       </div>
 
     </div>
 
-    <p class="itinerary-note ri">
-      <em>Some details may shift, but the weekend is officially happening. Si hay cambios en el itinerario serán mínimos!</em>
+    <p class="it-note ri">
+      <em>Some details may shift, but the weekend is officially happening. Si hay cambios en el itinerario serán mínimos.</em>
     </p>
-
-    <!-- ── TRAVEL PLANS ────────────────────────────────────── -->
-    <div class="travel-section">
-
-      <div class="travel-header ri">
-        <span class="s-label">Cómo Llegar &amp; Cómo Moverse</span>
-        <h2 class="dh" style="font-size: clamp(2.75rem, 9vw, 5.5rem)">Travel<br>Plans</h2>
-      </div>
-
-      <img src="images/img-005.png" alt="FIG 005 — This is the venue" class="travel-hero-img ri d1">
-
-      <div class="travel-grid">
-
-        <div class="travel-col ri">
-          <h3 class="travel-col-title">Arriving to SPS, HN</h3>
-
-          <div class="travel-module">
-            <span class="travel-module-label">I. Cuándo llegar</span>
-            <p class="travel-em">Best arrival window: Lunes 01 — Jueves 04</p>
-            <p>Si vienen antes del jueves, let me know para ayudarlas a coordinar estadía y transporte del aeropuerto.</p>
-          </div>
-
-          <div class="travel-module">
-            <span class="travel-module-label">II. Cómo llegar</span>
-            <p>The easiest way is to arrive to San Pedro Sula — Aeropuerto Ramón Villeda Morales.</p>
-            <div class="routes">
-              <div class="route-row"><span class="route-path">MAD → SPS</span><span class="route-airline">Air Europa</span></div>
-              <div class="route-row"><span class="route-path">MAD → MIA → SPS</span><span class="route-airline">American</span></div>
-              <div class="route-row"><span class="route-path">MAD → SAL → SPS</span><span class="route-airline">Iberia</span></div>
-              <div class="route-row"><span class="route-path">BAQ → BOG → SAP</span><span class="route-airline">Iberia</span></div>
-            </div>
-          </div>
-
-          <div class="travel-module">
-            <span class="travel-module-label">III. Where to stay</span>
-            <p>Hotels y airbnbs por confirmar. Le avisan a Marce qué día llegan y les ayudará.</p>
-          </div>
-        </div>
-
-        <div class="travel-col ri d1">
-          <h3 class="travel-col-title">Arriving to Copán</h3>
-
-          <div class="travel-module">
-            <span class="travel-module-label">I. Cuándo llegar</span>
-            <p class="travel-em">El wedding weekend empieza el Jueves 04 de Febrero</p>
-            <p>Lo ideal es que quienes puedan salgan a Copán ese día. Si no pueden llegar el jueves, no pasa nada — también habrá transporte el viernes 05.</p>
-          </div>
-
-          <div class="travel-module">
-            <span class="travel-module-label">II. Cómo llegar</span>
-            <p class="travel-em">Roadtrip de SPS a Copán. 3h drive.</p>
-            <p>Habrá transporte disponible: jueves 04 por la mañana + tarde y viernes 05. Horarios por confirmar. También pueden alquilar carro si es preferido.</p>
-          </div>
-
-          <div class="travel-module">
-            <span class="travel-module-label">III. Where to stay</span>
-            <p class="hotel-name">Hotel Marina Copán</p>
-            <p class="hotel-name">Hotel Ancestral</p>
-          </div>
-        </div>
-
-      </div>
-
-      <p class="travel-footnote">
-        Más cerca de la fecha les compartiré horarios, punto de salida y todos los detalles finales.
-      </p>
-
-    </div>
-    <!-- ── END TRAVEL ───────────────────────────────────────── -->
 
   </main>
 
   <div class="page-turn">
-    <a href="letter.html">← La Carta</a>
+    <a href="index.html">← La Carta</a>
     <a href="outfits.html">Los Looks →</a>
   </div>
 
-  <footer class="site-footer">
-    <p class="footer-logo">The Bridesmaids Issue</p>
-    <p class="footer-meta">Feb. 06 2027 &nbsp;·&nbsp; Copán Ruinas, Honduras</p>
-    <p class="footer-soon">La wedding website completa — próximamente.</p>
-    <p class="footer-love">Hecho con mucho amor ♡</p>
+  <footer class="foot">
+    <p>The Bridesmaids Issue &nbsp;·&nbsp; Feb. 06 2027 &nbsp;·&nbsp; Copán Ruinas, Honduras</p>
+    <p>Hecho con mucho amor ♡</p>
   </footer>
 
   <script src="main.js"></script>

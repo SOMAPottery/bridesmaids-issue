@@ -7,14 +7,9 @@
 
   if (!nav) return;
 
-  /* --- Nav scroll state ---------------------------------- */
-  window.addEventListener('scroll', function () {
-    nav.classList.toggle('scrolled', window.scrollY > 50);
-  }, { passive: true });
-
-  /* --- Mobile menu --------------------------------------- */
+  /* --- Mobile menu ---------------------------------------- */
   function setMenu(open) {
-    navBtn.classList.toggle('open', open);
+    navBtn.textContent = open ? 'Close' : 'Menu';
     navBtn.setAttribute('aria-expanded', String(open));
     overlay.classList.toggle('open', open);
     document.body.style.overflow = open ? 'hidden' : '';
@@ -32,7 +27,7 @@
     if (e.key === 'Escape') setMenu(false);
   });
 
-  /* --- Page fade on navigation --------------------------- */
+  /* --- Page fade on navigation ---------------------------- */
   document.querySelectorAll('a[href]').forEach(function (a) {
     var href = a.getAttribute('href');
     if (!href || href.startsWith('#') || href.startsWith('mailto') || href.startsWith('http')) return;
@@ -45,7 +40,7 @@
     });
   });
 
-  /* --- Scroll reveal ------------------------------------- */
+  /* --- Scroll reveal -------------------------------------- */
   var items = document.querySelectorAll('.ri');
 
   if ('IntersectionObserver' in window && items.length) {
@@ -56,7 +51,7 @@
           obs.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
 
     items.forEach(function (el) { obs.observe(el); });
   } else {

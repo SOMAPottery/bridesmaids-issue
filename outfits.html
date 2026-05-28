@@ -6,61 +6,64 @@
   <title>Los Looks — The Bridesmaids Issue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Cormorant+SC:wght@300;400&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav class="nav page-nav" id="nav">
+  <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">The Bridesmaids Issue</a>
       <ul class="nav-links" role="list">
-        <li><a href="letter.html">01 La Carta</a></li>
-        <li><a href="itinerary.html">02 El Itinerario</a></li>
-        <li><a href="outfits.html" class="active">03 Los Looks</a></li>
-        <li><a href="duties.html">04 Los Duties</a></li>
+        <li><a href="index.html">01 Carta</a></li>
+        <li><a href="itinerary.html">02 Itinerario</a></li>
+        <li><a href="outfits.html" class="active">03 Looks</a></li>
+        <li><a href="travel.html">04 Travel</a></li>
+        <li><a href="duties.html">05 Duties</a></li>
       </ul>
-      <button class="nav-btn" id="navBtn" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <button class="nav-btn" id="navBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
     </div>
   </nav>
 
   <div class="overlay" id="overlay" aria-hidden="true">
     <div class="overlay-links">
-      <a href="letter.html" class="overlay-link">La Carta</a>
+      <a href="index.html" class="overlay-link">La Carta</a>
       <a href="itinerary.html" class="overlay-link">El Itinerario</a>
       <a href="outfits.html" class="overlay-link">Los Looks</a>
+      <a href="travel.html" class="overlay-link">Travel</a>
       <a href="duties.html" class="overlay-link">Los Duties</a>
     </div>
   </div>
 
-  <main class="page-wrap">
+  <main class="page">
 
-    <img src="images/img-006.jpg" alt="The Outfits — editorial inspo" class="outfit-hero">
+    <!-- Hero image — full bleed, no text on top -->
+    <img src="images/img-006.jpg" alt="The Outfits — editorial inspo" class="out-hero ri">
 
-    <div class="outfit-page-intro">
-      <span class="s-label ri">Y ahora la info más importante &nbsp;·&nbsp; Issue 03</span>
-      <h1 class="dh ri d1" style="font-size: clamp(2.75rem, 9vw, 5.5rem)">
-        The Outfits
-      </h1>
-      <p class="ri d2">
+    <!-- Intro section below image -->
+    <div class="out-intro ri d1">
+      <div class="meta-row" style="padding-left: 0; padding-right: 0; border-top: 1px solid var(--rule);">
+        <span>III. Los Looks</span>
+        <span>Issue 03</span>
+      </div>
+      <h1 class="out-intro-title" style="margin-top: 1.25rem;">The Outfits</h1>
+      <p>
         Les dejo inspo de cada event pero <em>don't stress!!</em> Lo más importante para mí es que estén felices con what you are wearing. <strong>Solo no white ni cream.</strong>
       </p>
     </div>
 
     <!-- ── 01 RUN & SCULPT ─────────────────────────────────── -->
-    <div class="outfit-section">
-      <span class="outfit-event-num ri">01.</span>
-      <h2 class="outfit-event-name ri d1">Run&amp;Sculpt Event</h2>
-      <span class="outfit-event-when ri d2">Viernes 05 &nbsp;·&nbsp; 8:00 am &nbsp;·&nbsp; Las Ruinas Mayas</span>
+    <div class="out-section">
+      <span class="out-num ri">01.</span>
+      <h2 class="out-name ri d1">Run &amp; Sculpt Event</h2>
+      <span class="out-when ri d2">Viernes 05 &nbsp;·&nbsp; 8:00 am &nbsp;·&nbsp; Las Ruinas Mayas</span>
 
-      <div class="outfit-duo ri">
+      <div class="duo ri">
         <img src="images/img-007.jpg" alt="Run &amp; Sculpt outfit inspo">
         <img src="images/img-008.jpg" alt="Run &amp; Sculpt outfit inspo">
       </div>
 
-      <div class="outfit-text ri">
+      <div class="out-text ri">
         <p class="vibe">Cute gym sets &amp; sneakers — que las haga sentirse bellas &amp; confident. <strong>No white.</strong></p>
         <p>Se dará lugar en las ruinas mayas a las 8am. Transporte desde el hotel. Luego nos juntaremos con los que hagan el run por un smoothie y regresaremos al hotel for the proper breakfast.</p>
         <p>Fer hará un trail run para sus amigos y yo una clasesita de sculpt que dará mi cuñada. <em>MUY EXCITED FOR THISSS!!</em></p>
@@ -68,36 +71,32 @@
       </div>
     </div>
 
-    <div class="rule-sm"></div>
-
     <!-- ── 02 WELCOME PARTY ───────────────────────────────── -->
-    <div class="outfit-section">
-      <span class="outfit-event-num ri">02.</span>
-      <h2 class="outfit-event-name ri d1">Welcome Party</h2>
-      <span class="outfit-event-when ri d2">Viernes 05 &nbsp;·&nbsp; 4:00 pm &nbsp;·&nbsp; Hotel Marina Copán</span>
+    <div class="out-section">
+      <span class="out-num ri">02.</span>
+      <h2 class="out-name ri d1">Welcome Party</h2>
+      <span class="out-when ri d2">Viernes 05 &nbsp;·&nbsp; 4:00 pm &nbsp;·&nbsp; Hotel Marina Copán</span>
 
-      <div class="outfit-trio ri">
-        <img src="images/img-009.jpg" alt="Welcome Party outfit inspo — colorful dress" class="trio-main">
+      <div class="trio ri">
+        <img src="images/img-009.jpg" alt="Welcome Party outfit inspo" class="trio-main">
         <div class="trio-side">
           <img src="images/img-010.jpg" alt="Welcome Party outfit inspo">
           <img src="images/img-011.jpg" alt="Welcome Party outfit inspo">
         </div>
       </div>
 
-      <div class="outfit-text ri">
+      <div class="out-text ri">
         <p class="vibe">Colorful midi dresses &amp; skirt sets. Day/sunset party. Colorful prints, movement and fun is the vibe. <strong>No white.</strong></p>
         <p>La welcome party será el viernes 05 en el pool &amp; bar del Hotel Marina Copán, empezando a las 4:00pm.</p>
         <p class="note">Es la primera celebración oficial!! Usa tacones cómodos para bailar.</p>
       </div>
     </div>
 
-    <div class="rule-sm"></div>
-
     <!-- ── 03 BRIDESMAIDS DRESS ───────────────────────────── -->
-    <div class="outfit-section">
-      <span class="outfit-event-num ri">03.</span>
-      <h2 class="outfit-event-name ri d1">Bridesmaids Dress</h2>
-      <span class="outfit-event-when ri d2">Sábado 06 &nbsp;·&nbsp; The Wedding Day</span>
+    <div class="out-section">
+      <span class="out-num ri">03.</span>
+      <h2 class="out-name ri d1">Bridesmaids Dress</h2>
+      <span class="out-when ri d2">Sábado 06 &nbsp;·&nbsp; The Wedding Day</span>
 
       <div class="dress-split ri">
         <img src="images/img-012.jpg" alt="Café Chocolate — the color" class="dress-fabric">
@@ -117,7 +116,7 @@
         <img src="images/img-015.jpg" alt="Bridesmaids dress inspo">
       </div>
 
-      <div class="outfit-text ri">
+      <div class="out-text ri">
         <p class="vibe">Vestidos largos &amp; elegantes con un factor WOW. Un scarf, un bow, la tela — esos son algunos wow factors.</p>
         <p>Escojan algo que las haga sentirse hermosísimas.</p>
         <p class="note" style="border-top: 1px solid var(--rule); padding-top: 0.75rem; margin-top: 0.25rem">
@@ -130,14 +129,12 @@
 
   <div class="page-turn">
     <a href="itinerary.html">← El Itinerario</a>
-    <a href="duties.html">Los Duties →</a>
+    <a href="travel.html">Travel →</a>
   </div>
 
-  <footer class="site-footer">
-    <p class="footer-logo">The Bridesmaids Issue</p>
-    <p class="footer-meta">Feb. 06 2027 &nbsp;·&nbsp; Copán Ruinas, Honduras</p>
-    <p class="footer-soon">La wedding website completa — próximamente.</p>
-    <p class="footer-love">Hecho con mucho amor ♡</p>
+  <footer class="foot">
+    <p>The Bridesmaids Issue &nbsp;·&nbsp; Feb. 06 2027 &nbsp;·&nbsp; Copán Ruinas, Honduras</p>
+    <p>Hecho con mucho amor ♡</p>
   </footer>
 
   <script src="main.js"></script>
