@@ -848,6 +848,18 @@ a   { color: inherit; text-decoration: none; }
   .out-lede p { margin-left: 22%; width: auto; max-width: 46%; }
 }
 
+/* Outfit event paragraphs — same layout as it-intro, ~2pt smaller */
+.out-para {
+  max-width: 980px;
+  margin: 3rem auto 0;
+  padding: 0 2.5rem;
+}
+.out-para p {
+  max-width: 52vw;
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
+  line-height: 1.3;
+}
+
 /* Full-width figure block */
 .out-fig {
   max-width: 980px;
@@ -938,6 +950,7 @@ a   { color: inherit; text-decoration: none; }
   display: block;
 }
 .out-4grid-cell p { font-size: clamp(0.82rem, 1.5vw, 0.92rem); line-height: 1.28; margin: 0; }
+.out-4grid-cell p + p { margin-top: 0.6rem; }
 
 /* Color info block (Bridesmaids Dress) */
 .out-color-block {
@@ -1186,11 +1199,13 @@ a   { color: inherit; text-decoration: none; }
    Container padding reduced so max-width can breathe on the right */
 @media (max-width: 679px) {
   .it-intro  { padding-inline: 1.25rem; }
+  .out-para  { padding-inline: 1.25rem; }
   .page-text { padding-inline: 1.25rem; }
   .article   { padding-inline: 1.25rem; }
   .carta-letter-wrap { padding-inline: 0; }
 
-  .it-intro p {
+  .it-intro p,
+  .out-para p {
     margin-left: 24px;
     width: 66vw;
     max-width: 260px;
