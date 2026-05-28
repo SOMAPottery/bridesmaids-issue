@@ -359,11 +359,11 @@ a   { color: inherit; text-decoration: none; }
    art-pull  large feature/pull text
    =============================================================== */
 
-.art-l, .art-m, .art-r, .art-n, .art-pull {
+.art-l, .art-m, .art-r, .art-n, .art-pull, .art-pull-roman {
   padding-top: 1.75rem;
 }
 
-.art-l p, .art-m p, .art-r p, .art-n p, .art-pull p { margin: 0; }
+.art-l p, .art-m p, .art-r p, .art-n p, .art-pull p, .art-pull-roman p { margin: 0; }
 
 .art-l p {
   max-width: 500px;
@@ -397,6 +397,12 @@ a   { color: inherit; text-decoration: none; }
   font-size: clamp(1.25rem, 3.5vw, 1.9rem);
   line-height: 1.22;
   font-style: italic;
+}
+
+@media (min-width: 700px) { .art-pull-roman { padding-right: 10%; } }
+.art-pull-roman p {
+  font-size: clamp(1.25rem, 3.5vw, 1.9rem);
+  line-height: 1.22;
 }
 
 /* Wrapper for editorial blocks used outside .out-section */
