@@ -630,6 +630,74 @@ a   { color: inherit; text-decoration: none; }
   margin-top: 0.75rem;
 }
 
+/* ── Shared FSF "continued reading" archive grid ── */
+.arch-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+@media (min-width: 680px) {
+  .arch-grid { padding: 0 2.5rem; }
+}
+
+.arch-entry {
+  padding: 1rem 0 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.arch-entry:nth-child(odd) {
+  padding-right: 1rem;
+  border-right: 1px solid var(--rule);
+}
+
+.arch-entry:nth-child(even) {
+  padding-left: 1rem;
+}
+
+@media (min-width: 680px) {
+  .arch-entry:nth-child(odd)  { padding-right: 2rem; }
+  .arch-entry:nth-child(even) { padding-left: 2rem; }
+}
+
+.arch-label {
+  font-family: var(--mono);
+  font-size: 0.46rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.arch-when {
+  font-family: var(--mono);
+  font-size: 0.44rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.arch-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.arch-desc {
+  font-size: clamp(0.82rem, 1.5vw, 0.92rem);
+  line-height: 1.28;
+  margin-top: 0.6rem;
+}
+
 /* Important Details section */
 .details {
   max-width: 980px;
