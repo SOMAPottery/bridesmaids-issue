@@ -523,6 +523,20 @@ a   { color: inherit; text-decoration: none; }
   line-height: 1.22;
 }
 
+/* ── Carta: tall full-height intro (FSF style) ── */
+.ch-carta {
+  min-height: 74vh;
+  padding: 4rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ch-carta .ch-title {
+  font-size: clamp(2.625rem, 8vw, 3.25rem);
+}
+
 /* ── Carta: offset letter paragraph + attached signature ── */
 .carta-letter-wrap {
   max-width: 980px;
@@ -534,6 +548,7 @@ a   { color: inherit; text-decoration: none; }
   margin-left: 34vw;
   width: 56vw;
   max-width: 240px;
+  box-sizing: border-box;
   font-size: clamp(0.95rem, 2vw, 1.1rem);
   line-height: 1.3;
   margin-bottom: 0.65rem;
@@ -545,6 +560,13 @@ a   { color: inherit; text-decoration: none; }
 }
 
 @media (min-width: 680px) {
+  .ch-carta {
+    min-height: 0;
+    padding: 7rem 2rem 6rem;
+  }
+  .ch-carta .ch-title {
+    font-size: clamp(1.85rem, 5vw, 3.2rem);
+  }
   .carta-letter-p {
     margin-left: 22%;
     width: auto;
