@@ -982,3 +982,16 @@ a   { color: inherit; text-decoration: none; }
    UTILITIES
    =============================================================== */
 @media (max-width: 360px) { body { font-size: 0.93rem; } }
+
+/* Mobile editorial reading column
+   Container padding reduced so max-width can breathe on the right */
+@media (max-width: 679px) {
+  .it-intro  { padding-inline: 1.25rem; }
+  .page-text { padding-inline: 1.25rem; }
+  .article   { padding-inline: 1.25rem; }
+
+  .it-intro p,
+  .art-l p,
+  .art-m p,
+  .article p { max-width: 80vw; }
+}
