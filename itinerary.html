@@ -6,7 +6,7 @@
   <title>El Itinerario — The Bridesmaids Issue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Alex+Brush&family=Cormorant+SC:wght@300;400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Alex+Brush&family=Cormorant+SC:wght@300;400&family=Courier+Prime:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,26 +37,24 @@
 
   <main class="page-wrap">
 
-    <!-- Intro split: image + text -->
-    <div class="itinerary-split">
-      <div class="itinerary-split-img ri">
+    <div class="intro-split">
+      <div class="intro-split-img ri">
         <img src="images/img-004.png" alt="FIG 004 — The Itinerary">
       </div>
-      <div class="itinerary-split-text">
-        <span class="t-label ri">Fechas e Itinerario &nbsp;·&nbsp; Issue 02</span>
-        <h1 class="t-script ri d1" style="font-size: clamp(3.5rem, 11vw, 6.5rem); color: var(--chocolate)">
+      <div class="intro-split-text">
+        <span class="s-label ri">Fechas e Itinerario &nbsp;·&nbsp; Issue 02</span>
+        <h1 class="dh ri d1" style="font-size: clamp(3.5rem, 11vw, 6.5rem)">
           The<br>Itinerary
         </h1>
-        <p class="itinerary-lead ri d2">
+        <p class="intro-lead ri d2">
           Para pasar un amazing weekend estamos organizando una serie de eventos desde el viernes por la mañana para gozarla!!
         </p>
       </div>
     </div>
 
-    <!-- Events -->
     <div class="event-list">
 
-      <div class="event-row ri">
+      <div class="event-item ri">
         <div>
           <span class="event-num">I.</span>
           <h2 class="event-name">Travel</h2>
@@ -65,7 +63,7 @@
         <p class="event-desc">Saldremos de SPS para Copán Ruinas. Es un día libre para turistear o rest, sauna y pool day.</p>
       </div>
 
-      <div class="event-row ri">
+      <div class="event-item ri">
         <div>
           <span class="event-num">II.</span>
           <h2 class="event-name">Run&amp;Sculpt</h2>
@@ -74,7 +72,7 @@
         <p class="event-desc">Una clase de sculpt y un trail run activity en las ruinas mayas. Solo para close friends &amp; family. Wear sneakers!</p>
       </div>
 
-      <div class="event-row ri">
+      <div class="event-item ri">
         <div>
           <span class="event-num">III.</span>
           <h2 class="event-name">Welcome Party</h2>
@@ -83,7 +81,7 @@
         <p class="event-desc">El pre-wedding en el pool &amp; bar del Hotel Marina Copán. La primera celebración oficial.</p>
       </div>
 
-      <div class="event-row event-row--wedding ri">
+      <div class="event-item event-item--wedding ri">
         <div>
           <span class="event-num">IV.</span>
           <h2 class="event-name">The Wedding</h2>
@@ -99,30 +97,28 @@
     </p>
 
     <!-- ── TRAVEL PLANS ────────────────────────────────────── -->
-    <div style="background: var(--espresso); margin-top: 4rem;">
+    <div class="travel-section">
 
-      <img src="images/img-005.png" alt="FIG 005 — This is the venue" class="travel-image">
-
-      <div class="travel-title-block" style="border-bottom-color: rgba(244,239,230,0.1)">
-        <span class="t-label" style="color: rgba(244,239,230,0.55)">Cómo Llegar &amp; Cómo Moverse</span>
-        <h2 class="t-script ri" style="font-size: clamp(3.5rem, 11vw, 7rem); color: var(--cream); line-height: 0.95; margin-top: 0.25rem">
-          Travel<br>Plans
-        </h2>
+      <div class="travel-header ri">
+        <span class="s-label">Cómo Llegar &amp; Cómo Moverse</span>
+        <h2 class="dh" style="font-size: clamp(2.75rem, 9vw, 5.5rem)">Travel<br>Plans</h2>
       </div>
 
-      <div class="travel-cols">
+      <img src="images/img-005.png" alt="FIG 005 — This is the venue" class="travel-hero-img ri d1">
+
+      <div class="travel-grid">
 
         <div class="travel-col ri">
           <h3 class="travel-col-title">Arriving to SPS, HN</h3>
 
-          <div class="travel-block">
-            <span class="travel-block-label">I. Cuándo llegar</span>
+          <div class="travel-module">
+            <span class="travel-module-label">I. Cuándo llegar</span>
             <p class="travel-em">Best arrival window: Lunes 01 — Jueves 04</p>
             <p>Si vienen antes del jueves, let me know para ayudarlas a coordinar estadía y transporte del aeropuerto.</p>
           </div>
 
-          <div class="travel-block">
-            <span class="travel-block-label">II. Cómo llegar</span>
+          <div class="travel-module">
+            <span class="travel-module-label">II. Cómo llegar</span>
             <p>The easiest way is to arrive to San Pedro Sula — Aeropuerto Ramón Villeda Morales.</p>
             <div class="routes">
               <div class="route-row"><span class="route-path">MAD → SPS</span><span class="route-airline">Air Europa</span></div>
@@ -132,8 +128,8 @@
             </div>
           </div>
 
-          <div class="travel-block">
-            <span class="travel-block-label">III. Where to stay</span>
+          <div class="travel-module">
+            <span class="travel-module-label">III. Where to stay</span>
             <p>Hotels y airbnbs por confirmar. Le avisan a Marce qué día llegan y les ayudará.</p>
           </div>
         </div>
@@ -141,20 +137,20 @@
         <div class="travel-col ri d1">
           <h3 class="travel-col-title">Arriving to Copán</h3>
 
-          <div class="travel-block">
-            <span class="travel-block-label">I. Cuándo llegar</span>
+          <div class="travel-module">
+            <span class="travel-module-label">I. Cuándo llegar</span>
             <p class="travel-em">El wedding weekend empieza el Jueves 04 de Febrero</p>
             <p>Lo ideal es que quienes puedan salgan a Copán ese día. Si no pueden llegar el jueves, no pasa nada — también habrá transporte el viernes 05.</p>
           </div>
 
-          <div class="travel-block">
-            <span class="travel-block-label">II. Cómo llegar</span>
+          <div class="travel-module">
+            <span class="travel-module-label">II. Cómo llegar</span>
             <p class="travel-em">Roadtrip de SPS a Copán. 3h drive.</p>
             <p>Habrá transporte disponible: jueves 04 por la mañana + tarde y viernes 05. Horarios por confirmar. También pueden alquilar carro si es preferido.</p>
           </div>
 
-          <div class="travel-block">
-            <span class="travel-block-label">III. Where to stay</span>
+          <div class="travel-module">
+            <span class="travel-module-label">III. Where to stay</span>
             <p class="hotel-name">Hotel Marina Copán</p>
             <p class="hotel-name">Hotel Ancestral</p>
           </div>
