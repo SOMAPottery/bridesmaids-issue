@@ -1,9 +1,10 @@
 (function () {
   'use strict';
 
-  var nav     = document.getElementById('nav');
-  var navBtn  = document.getElementById('navBtn');
-  var overlay = document.getElementById('overlay');
+  var nav          = document.getElementById('nav');
+  var navBtn       = document.getElementById('navBtn');
+  var overlay      = document.getElementById('overlay');
+  var overlayClose = document.getElementById('overlayClose');
 
   if (!nav) return;
 
@@ -12,12 +13,17 @@
     navBtn.textContent = open ? 'Close' : 'Menu';
     navBtn.setAttribute('aria-expanded', String(open));
     overlay.classList.toggle('open', open);
+    overlay.setAttribute('aria-hidden', String(!open));
     document.body.style.overflow = open ? 'hidden' : '';
   }
 
   navBtn.addEventListener('click', function () {
     setMenu(!overlay.classList.contains('open'));
   });
+
+  if (overlayClose) {
+    overlayClose.addEventListener('click', function () { setMenu(false); });
+  }
 
   overlay.querySelectorAll('.overlay-link').forEach(function (l) {
     l.addEventListener('click', function () { setMenu(false); });
