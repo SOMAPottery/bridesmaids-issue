@@ -498,20 +498,18 @@ a   { color: inherit; text-decoration: none; }
 }
 
 .sign-close {
-  font-family: var(--mono);
-  font-size: 0.54rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
+  font-family: var(--serif);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: var(--text);
   display: block;
   margin-bottom: 0.1rem;
 }
 
 .sign-name {
-  font-family: var(--script);
-  font-size: 2.625rem;
+  font-family: var(--serif);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: var(--text);
-  line-height: 1;
+  line-height: 1.32;
   display: block;
   margin-top: 0.5rem;
 }
