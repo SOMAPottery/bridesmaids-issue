@@ -1017,6 +1017,13 @@ a   { color: inherit; text-decoration: none; }
   .out-notes-cell:nth-child(even) { padding-left: 2rem; }
 }
 .out-notes-cell p { font-size: clamp(0.82rem, 1.5vw, 0.92rem); line-height: 1.28; margin: 0; }
+.out-notes-cell img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
 /* ===============================================================
    TRAVEL PAGE
