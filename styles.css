@@ -986,6 +986,7 @@ a   { color: inherit; text-decoration: none; }
   display: flex;
   justify-content: flex-end;
 }
+.out-dress-offset.out-dress-left { justify-content: flex-start; }
 .out-dress-offset-inner { width: 52%; }
 .out-dress-offset-inner img {
   width: 100%;
