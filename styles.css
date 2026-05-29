@@ -760,8 +760,12 @@ a   { color: inherit; text-decoration: none; }
   padding: 0 2.5rem;
 }
 
-.it-intro p {
+.it-intro p,
+.it-intro .duties-sig {
   max-width: 52vw;
+}
+
+.it-intro p {
   font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.28;
 }
@@ -1210,6 +1214,7 @@ a   { color: inherit; text-decoration: none; }
   .carta-letter-wrap { padding-inline: 0; }
 
   .it-intro p,
+  .it-intro .duties-sig,
   .out-para p,
   .out-lede p {
     margin-left: 24px;
