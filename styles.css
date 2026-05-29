@@ -1068,7 +1068,7 @@ a   { color: inherit; text-decoration: none; }
 .tr-mod p { font-size: 0.92rem; line-height: 1.28; margin-bottom: 0.3rem; }
 .tr-em    { font-style: italic !important; }
 
-.routes { margin-top: 0.5rem; max-width: 340px; }
+.routes { margin-top: 0.5rem; max-width: 340px; margin-left: auto; margin-right: auto; }
 
 .route-row {
   display: flex;
