@@ -1028,6 +1028,11 @@ a   { color: inherit; text-decoration: none; }
   margin-bottom: 0.5rem;
 }
 
+.out-4grid.no-dividers .out-4grid-cell,
+.out-notes-grid.no-dividers .out-notes-cell {
+  border: none;
+}
+
 /* ===============================================================
    TRAVEL PAGE
    =============================================================== */
